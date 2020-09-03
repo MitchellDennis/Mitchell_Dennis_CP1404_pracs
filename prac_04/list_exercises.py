@@ -1,7 +1,8 @@
 
 """list expercises"""
 
-def main():
+
+def main_01():
 
     print_numbers(fetch_numbers())
 
@@ -19,4 +20,14 @@ def print_numbers(numbers):
     print("The largest number is {}".format(max(numbers)))
     print("The average of the numbers is ", sum(numbers) / len(numbers))
 
-main()
+def main_02():
+
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface', 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+    name = input("Username: ")
+    if name in usernames:
+        print("Access granted")
+    else:
+        print("Access denied")
+
+
+main_02()
