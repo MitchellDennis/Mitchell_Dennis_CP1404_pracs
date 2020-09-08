@@ -1,6 +1,7 @@
 
 
 YEAR = 2020
+VINTAGE_AGE = 50
 
 class Guitar:
     """guitar calss, stores year, name and cost"""
@@ -19,5 +20,7 @@ class Guitar:
 
     def is_vintage(self):
 
-        if self.get_age() >= 50:
+        if self.get_age() >= VINTAGE_AGE:
             return True
+        else:
+            return False
