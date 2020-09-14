@@ -11,9 +11,9 @@ def main():
     print(ruby)
 
     print("The dynamic languages are:")
-    for i in languages:
-        if i.is_dynamic():
-            print(i.name)
+    for language in languages:
+        if language.is_dynamic():
+            print(language.name)
 
 
 main()

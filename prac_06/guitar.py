@@ -15,7 +15,9 @@ class Guitar:
         return "{} ({}): ${}".format(self.name, self.year, self.cost)
 
     def get_age(self):
-        age = YEAR - self.year
+        from datetime import datetime
+        current_year = datetime.now().year
+        age = current_year - self.year
         return age
 
     def is_vintage(self):
